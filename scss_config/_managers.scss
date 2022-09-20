@@ -1,0 +1,25 @@
+#managers{
+    .container{
+        width: 69%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        article{
+            background: $white-color;
+            border-radius: 1rem;
+            box-shadow: 0 1.5rem 1.5rem rgba($black-color,  $alpha: 0.1);
+            position: relative;
+            transition: all 700ms ease;
+            &:hover{
+                box-shadow: none;
+            }
+            .managers_img{
+                height: 20rem;
+                position: relative;
+                border-radius: 1rem;
+                overflow: hidden;
+            }
+        }
+    }
+}

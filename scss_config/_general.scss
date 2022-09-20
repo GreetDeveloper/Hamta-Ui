@@ -1,0 +1,69 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: $dark-color;
+    background: rgba($primary-color-variant, 0.2);
+    user-select: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: $container-lg;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.2;
+}
+section{
+    margin-top: 6rem;
+    &> h2{
+        text-align: center;
+    }
+
+    //p 
+    &> p{
+        text-align: center;
+        width: 44%;
+        margin: 0.6rem auto 2.4rem;
+    }
+
+}
+.btn{
+    @include button();
+}
+.primary-btn{
+    @include button($white-color, $primary-color);
+}
+
+                        /*  Medium Devices  */
+
+@media screen and (max-width: 1024px) {
+    .container{
+        width: $container-md;
+    }
+    section{
+        & > p{
+            width: 55%;
+        }
+    }
+    
+}
+
+                        /*  Small Devices   */
+@media screen and(max-width: 600px) {
+    section{
+        & > p {
+            width: $container-md;
+        }
+    }
+    
+}
