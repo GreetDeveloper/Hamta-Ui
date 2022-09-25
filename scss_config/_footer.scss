@@ -46,3 +46,30 @@ footer{
         font-size: 0.9rem;
     }
 }
+
+                    /* Medium Devices*/
+@media screen and(max-width: 1024px) {
+    footer{
+        .container{
+            gap: 2.5rem;
+        }
+    }
+}
+                    /* Small Devices*/
+@media screen and(max-width: 600px) {
+    footer{
+        .container{
+            grid-template-columns: 1fr;
+            text-align: center;
+
+            .primary-btn, .footer_socials{
+                margin: 0 auto;
+            }
+            article{
+                & > div{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

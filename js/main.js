@@ -17,3 +17,13 @@ const closeNav = () =>{
     closeNavbtn.style.display = 'none';
 }
 closeNavbtn.addEventListener('click', closeNav);
+
+// close nav after click
+
+if(window.innerWidth < 1024){
+    document.querySelectorAll('#nav_items li a ').forEach(navItems =>{
+        navItems.addEventListener('click', ()=>{
+            closeNav();
+        })
+    })
+}
