@@ -14,7 +14,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
-  color: rgba #0c031b, 0.7;
+  color: rgba #480ca8, 0.7;
   background: rgba(76, 201, 240, 0.2);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -59,6 +59,7 @@ section > p {
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;
+  align-items: center;
   background: #302b63;
   color: #ffffff;
   cursor: pointer;
@@ -76,13 +77,14 @@ section > p {
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;
-  background: #480ca8;
+  align-items: center;
+  background: #302b63;
   color: #ffffff;
   cursor: pointer;
   transition: all 400ms ease;
 }
 .primary-btn:hover {
-  background: #580fce;
+  background: #3e377f;
   box-shadow: 0 1rem 1.6rem rgba(0, 0, 0, 0.2);
 }
 
@@ -265,7 +267,7 @@ header .container .header_content p {
   gap: 3rem;
 }
 #services .container article {
-  background: linear-gradient(30deg, #43c6ac, #4cc9f0);
+  background: linear-gradient(30deg, rgba(29, 119, 179, 0.8784313725), #4cc9f0);
   color: #ffffff;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -349,7 +351,7 @@ header .container .header_content p {
   position: absolute;
   top: 0;
   left: -100%;
-  background: linear-gradient(135deg, rgba(76, 201, 240, 0.8), rgba(67, 198, 172, 0.8));
+  background: linear-gradient(135deg, rgba(76, 201, 240, 0.8), rgba(29, 119, 179, 0.8));
   border-radius: 50%;
   transition: all 1s ease;
 }
@@ -403,8 +405,114 @@ header .container .header_content p {
   }
 }
 /*  Small Devices   */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   #managers .container {
     grid-template-columns: 1fr;
   }
+}
+#appoinment .container {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 6%;
+}
+#appoinment .container .info p {
+  margin: 0.5rem 0 2rem;
+}
+#appoinment .container .info article {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#appoinment .container .info article small {
+  margin-top: 0.4rem;
+  display: block;
+}
+#appoinment .container .info article .info_icon {
+  background: #302b63;
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#appoinment .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+#appoinment .container .group_form label {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+#appoinment .container .group_form input, #appoinment .container .group_form textarea, #appoinment .container .group_form select {
+  background: #ffffff;
+  padding: 0.85rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  resize: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/*  Small Devices   */
+@media screen and (max-width: 600px) {
+  #appoinment .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #appoinment .container .info h2, #appoinment .container .info p {
+    text-align: center;
+  }
+}
+footer {
+  background: linear-gradient(140deg, #4cc9f0, rgba(29, 119, 179, 0.8784313725));
+  color: rgba #ffffff, 0.7;
+  padding-top: 6rem;
+  margin-top: 6rem;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  font-size: 0.85rem;
+}
+footer .container a {
+  color: rgba #ffffff, 0.7;
+  transition: all 400ms ease;
+}
+footer .container a:hover {
+  color: #ffffff;
+}
+footer .container a > h3 {
+  color: #ffffff;
+}
+footer .container article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .container article > div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+footer .container article > h3 {
+  color: #ffffff;
+}
+footer .container article .footer_socials {
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+footer .copyright {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.main.css.map */

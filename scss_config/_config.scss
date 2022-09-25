@@ -12,7 +12,7 @@
 }
 //root color 
 $primary-color : #480ca8 ;
-$madium-color: #43c6ac;
+$madium-color: #1d77b3e0;
 $blue-dark: #052c5fbd;
 $appoint: #302b63;
 $primary-color-variant : #4cc9f0 ;
@@ -20,7 +20,7 @@ $secondary-color : #f72585 ;
 $white-color : #ffffff ;
 $light-color : rgba ($white-color, 0.7 ) ;
 $black-color : #0c031b ;
-$dark-color : rgba ( $black-color, 0.7 ) ;
+$dark-color : rgba ( $primary-color, 0.7 ) ;
 $success-color :  #54eb72 ; 
 $container-lg : 81% ;
 $container-md : 91% ;

@@ -41,7 +41,7 @@ section{
     @include button();
 }
 .primary-btn{
-    @include button($white-color, $primary-color);
+    @include button($white-color, $appoint);
 }
 
                         /*  Medium Devices  */

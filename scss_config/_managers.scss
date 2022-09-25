@@ -105,12 +105,12 @@
 
 
                             /*  Small Devices   */
-@media screen and(max-width: 1024px) {
+@media screen and(max-width: 600px) {
     #managers{
         .container{
             grid-template-columns: 1fr;
         }
    }
-                                
+                              
 }
                             
