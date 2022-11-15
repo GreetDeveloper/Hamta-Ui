@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="./css/style.main.css">
                     <!-- fontsawesome -->
     <link rel="stylesheet" href="./css/all.min.css">
+
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("BLx6f1Al-ZZ5W4MXqeTPmSmYuAaqKPLp9H");
+        })();
+    </script>
+
+
 </head>
 <body>
     <nav>
@@ -20,7 +29,7 @@
                 <li><a href="Services">Services</a></li>
                 <li><a href="Manager">Manager</a></li>
                 <li><a href="Contact">Contact us</a></li>
-                <li><a href="Appointment" class="btn">Make Appointment</a></li>
+                <li><a href="group_form" class="btn">Make Appointment</a></li>
 
             </ul>
             <button id="open_b"> <i class="fa-sharp fa-solid fa-bars"></i> </button>
@@ -218,17 +227,23 @@
                 </article>
             </div>
 
-            <form >
+            <form action="https://formsubmit.co/apt28.devloper@gmail.com" method="POST" >
                 <div class="group_form">
                     <label for="name"> Name </label>
-                    <input type="text" placeholder="Enter Your Name " name="Customer Name " id="name " required>
+                    <input type="text" placeholder="Enter Your Name " name="name " id="name " required>
                 </div>
+
                 <div class="group_form">
-                    <label for="phone"> Phone Number </label>
+                    <label for="email" id="email"> E-Mail </label>
+                    <input type="email" placeholder="Enter Your E-Mail " name="email " id="email " required>
+                </div>
+
+                <div class="group_form">
+                    <label for="phone" id="phone"> Phone Number </label>
                     <input type="number" placeholder="Enter Phone Number" name="Phone Number" id="phone" required>
                 </div>
                 <div class="group_form">
-                    <label for="date"> Select a Date</label>
+                    <label for="date" id="date"> Select a Date</label>
                     <input type="date" placeholder="Choose a date " name="Date" id="date" required>
                 </div>
                 <div class="group_form">
@@ -253,9 +268,9 @@
                 </div>
                 <div class="group_form">
                     <label for="message">Additional Message </label>
-                    <textarea name="Add Message " placeholder="Add a Message "  id="message" rows="6" required ></textarea>
+                    <textarea name="message " placeholder=" your Message"  id="message" rows="6" required ></textarea>
                 </div>
-                <input type="submit" value="Send" class="primary-btn">
+                <button type="submit" value="Send" class="primary-btn" >Send</button>
             </form>
         </div>
     </section>
@@ -305,7 +320,10 @@
             <small>&copy; Copyright Hamta Sallon. All Rights Reserved.</small>
         </div>
     </footer>
+    
 
     <script src="./js/main.js"></script>
+
+    <script src="js/server.js"></script>
 </body>
 </html>
